@@ -17,9 +17,9 @@ namespace DesignPatterns.builder
 
         public void Build()
         {
-            _builder.BuildHeader();
-            _builder.BuildBody();
-            _builder.BuildFooter();
+            _builder.BuildHeader()
+                    .BuildBody()
+                    .BuildFooter();
         }
     }
 }
